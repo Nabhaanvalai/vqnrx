@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "npm --prefix frontend install",
+  "buildCommand": "npm --prefix frontend run build",
+  "functions": {
+    "app.py": {
+      "maxDuration": 60,
+      "excludeFiles": "{frontend/node_modules/**,tests/**,.venv/**}"
+    }
+  }
+}
